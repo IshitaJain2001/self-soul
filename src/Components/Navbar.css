@@ -1,0 +1,78 @@
+@import './colors.css';
+
+.navbar-container {
+
+  width: 100vw;
+  height: 88px;
+  padding-left: 84px;
+}
+
+.navbar {
+    margin-top: 28px;
+    
+  max-width: 1440px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+/* Logo */
+
+.logo {
+  height: 42px;
+  width: 199px;
+  object-fit: contain;
+}
+
+.nav-tab-wrapper {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+
+
+    border-radius: 247px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--green-text);
+  font-weight: 700;
+  /* font-size: 15px; */
+padding: 10px 23px;
+
+
+  
+
+
+}
+
+.nav-links li {
+  padding: 8px 20px;
+  border-radius: 999px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/* Highlighted nav item */
+.nav-links li.active {
+  background-color: white;
+  font-weight: bold;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+/* Right-side icons */
+.icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
