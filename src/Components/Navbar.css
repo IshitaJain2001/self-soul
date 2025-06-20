@@ -4,21 +4,22 @@
 
   width: 100vw;
   height: 88px;
-  padding-left: 84px;
+
 }
 
 .navbar {
-    margin-top: 28px;
+
     
   max-width: 1440px;
   height: 88px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
+
+  justify-content: space-evenly;
+ 
 }
 
-/* Logo */
+
 
 .logo {
   height: 42px;
@@ -47,7 +48,7 @@
   padding: 0;
   color: var(--green-text);
   font-weight: 700;
-  /* font-size: 15px; */
+
 padding: 10px 23px;
 
 
@@ -57,7 +58,7 @@ padding: 10px 23px;
 }
 
 .nav-links li {
-  padding: 8px 20px;
+  padding: 8px 10px;
   border-radius: 999px;
   transition: 0.3s ease;
   cursor: pointer;
@@ -73,6 +74,7 @@ padding: 10px 23px;
 /* Right-side icons */
 .icons {
   display: flex;
-  gap: 15px;
+ width: 150px;
+ justify-content: space-between;
   align-items: center;
 }
