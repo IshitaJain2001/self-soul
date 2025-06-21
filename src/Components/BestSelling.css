@@ -1,0 +1,8 @@
+@import "./colors.css";
+ .img-container{
+    /* padding:124px 84px; */
+ transform: translateY(-4px);
+    height: 746px;
+    width: 100%;
+      background: var(--pink-bg);
+ }

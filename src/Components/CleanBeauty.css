@@ -1,0 +1,6 @@
+ @import "./colors.css";
+ 
+ .beauty-container{
+    height: 376px;
+background: var(--pink-text);
+ }
