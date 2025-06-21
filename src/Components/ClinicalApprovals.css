@@ -2,6 +2,7 @@
 
 .clean-beauty-section {
  background: var(--clinical);
+  color: var(--pink-text);
 transform: translateY(-4px);
   display: flex;
  flex-direction: column;
@@ -9,27 +10,29 @@ transform: translateY(-4px);
   color: white;
     height: 208px;
  justify-content: center; 
+  font-weight: 200;
+  font-family: 'Montserrat';
 
-
-
- font-weight: 100;
-  
-  text-align: center;
+padding: 50px 0;
+text-align: center;
 
 }
 
 .clean-beauty-section h2 {
   font-size: 16px;
-  
+ 
   margin-bottom: 15px;
   letter-spacing: 1px;
     width: 762px;
+  font-weight: 100;
 
 }
 
 .para{
-  font-weight: 300;
+  margin-top: 20px;
+ font-size: 12px;
     width: 762px;
-      line-height: 1.1;
-    
+      line-height: 1.5;
+    font-weight: 100;
+    word-spacing: 1.4px;
 }
