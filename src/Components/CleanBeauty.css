@@ -3,8 +3,36 @@
  .beauty-container{
     height: 376px;
 background: var(--pink-text);
+
+padding:95px 324px;
+ }
+
+ .inner-container{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+gap: 20px;
  }
  .imgg{
     width: 382px;
     height: 64px;
+   transform: translateY(-250px);
+ }
+
+ .beauty-container h2{
+     font-family: 'Montserrat';
+     font-weight: 200;
+     font-size: 24px;
+     width: 782px;
+     text-align: center;
+ }
+
+ .beauty-container p{
+   width: 782px;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    word-spacing: 1.4px;
+    text-align-last: center; 
+    line-height: 1.5;
  }
