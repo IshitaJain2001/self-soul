@@ -1,0 +1,26 @@
+.containerr {
+  height: 484px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.containerr img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.containerr p {
+  color: white;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  font-size: 18px;
+  line-height: 1.5;
+    font-family: 'Montserrat';
+}
