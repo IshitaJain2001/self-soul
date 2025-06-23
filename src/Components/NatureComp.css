@@ -6,10 +6,10 @@
 }
 
 .nature-image {
-  flex: 1;
-  height: 100%;
-
+  flex-basis: 50%;
+  flex-shrink: 0;
   overflow: hidden;
+  height: 100%;
 }
 
 .nature-image img {
@@ -19,7 +19,8 @@
 }
 
 .nature-content {
-  flex: 1;
+  flex-basis: 50%;
+  flex-shrink: 0;
   background-color: #f0e7df;
   padding: 80px 60px;
   display: flex;
@@ -27,10 +28,12 @@
   justify-content: center;
   color: #2b2b2b;
 }
-.final-content{
-    margin-top: 20px;
-    height: 210px;
+
+.final-content {
+  margin-top: 20px;
+  height: 210px;
 }
+
 .nature-content h2 {
   font-size: 26px;
   margin-bottom: 20px;
