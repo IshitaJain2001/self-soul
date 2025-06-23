@@ -1,3 +1,8 @@
+
+
+@import "./colors.css";
+
+
 .nature-section {
   display: flex;
   width: 100%;
@@ -21,12 +26,12 @@
 .nature-content {
   flex-basis: 50%;
   flex-shrink: 0;
-  background-color: #f0e7df;
+  background-color: var( --pink-text);
   padding: 80px 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #2b2b2b;
+
 }
 
 .final-content {
@@ -35,21 +40,26 @@
 }
 
 .nature-content h2 {
-  font-size: 26px;
+  font-size: 28px;
   margin-bottom: 20px;
-  color: #2b3e36;
+  color: var(--bath-rituals);
+  font-weight: 500;
 }
 
 .nature-content p {
-  font-size: 15px;
+  font-size: 12px;
   line-height: 1.6;
-  margin-bottom: 20px;
+
   height: 70px;
+  color: var( --green-text);
 }
 
 .nature-content a {
-  color: #2b3e36;
+   color: var( --green-text);
   font-weight: 600;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16x;
+
+  font-weight: 500;
+  
 }
