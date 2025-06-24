@@ -2,38 +2,46 @@
 
 .beauty-container {
   background: var(--pink-text);
-
+height: 376px;
   color: white;
   font-family: 'Montserrat';
+  padding:80px 324px ;
 }
 
 .inner-container {
-  max-width: 526px;
+  max-width: 782px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 25px;
   height: 210px;
-  padding: 100px;
+ 
 }
 
 .beauty-container h2 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
-  color: #f3d5a9; /* soft gold-like heading color */
-  text-align: left;
+  color: var(--clean-beauty-title);
+  text-align: center;
 }
 
 .beauty-container p {
   font-size: 14px;
   line-height: 1.7;
   text-align: left;
-  color: white;
+  color: var(--clean-beauty-title);
   word-spacing: 1.2px;
 }
 
 .imgg {
-  width: 150px;
+  width: 782px;
   height: auto;
-  margin-top: 10px;
+display: flex;
+justify-content: center;
+
+}
+
+.imgg img{
+    width: 150px;
+  height: auto;
 }
