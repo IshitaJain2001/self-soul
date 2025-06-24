@@ -1,0 +1,30 @@
+@import "./colors.css";
+
+
+
+.marcquee-container {
+    height: 1026px;
+  padding: 20px;
+background: var(--pink-text);
+display: flex;
+justify-content: center;
+}
+
+.marcquee-container img {
+  max-width: 100%;
+  height: 318px;
+  border-radius: 10px;
+  width: 1272px;
+  
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  color: #333;
+}

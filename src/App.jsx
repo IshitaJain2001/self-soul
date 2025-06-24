@@ -11,6 +11,7 @@ import ImageSection2 from "./Components/Image-Section"
 import WhatTheySay from "./Components/WhatTheySay"
 import NatureComp from "./Components/NatureComp"
 import OrganicComp from "./Components/OrganicComp"
+import Marcquee from "./Components/Marcquee"
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
    <WhatTheySay/>
    <NatureComp/>
    <OrganicComp/>
+   <Marcquee/>
     </>
   )
 }
