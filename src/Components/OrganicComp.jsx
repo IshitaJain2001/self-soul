@@ -4,7 +4,9 @@
     return(
         <div className="organic-section">
   <div className="organic-text">
-    <div className="text">
+   <div className="text">
+
+
   <h2>Dive into the world of Organic Works</h2>
     <p>
       Elevate your senses with the purity of our secret ingredients, lovingly nurtured by the Scottish landscape.
@@ -13,8 +15,8 @@
       is a genuine connection to the heart of Scotland.
     </p>
     <a href="#">Learn More</a>
-    </div>
-  
+
+     </div>
   </div>
   <div className="organic-image">
     <img src={img} alt="Organic Works Image" />

@@ -8,13 +8,23 @@
 }
 
 .organic-text {
-  flex: 1;
+
   background-color: var(--clinical);
   color: var(--organic-text);
  
 width: 50%;
  height: 500px;
  overflow: hidden;
+
+ padding:139px 100px;
+
+
+ 
+}
+
+.text{
+  width: 526px;
+  height: 210px;
 }
 
 
@@ -32,14 +42,16 @@ width: 50%;
   margin-bottom: 20px;
   color:var(--pink-bg);
   max-width: 500px;
-
+height: 100px;
+margin-bottom: 80px;
 }
 
 .organic-text a {
-  color: ;
+  color:var(--pink-bg) ;
   font-weight: 500;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 20px;
+ 
 }
 
 .organic-image {
