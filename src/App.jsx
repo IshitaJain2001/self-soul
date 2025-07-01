@@ -12,6 +12,8 @@ import WhatTheySay from "./Components/WhatTheySay"
 import NatureComp from "./Components/NatureComp"
 import OrganicComp from "./Components/OrganicComp"
 import Marcquee from "./Components/Marcquee"
+import FooterContact from "./Components/Footer-Contact"
+import FooterSection from "./Components/FooterSection"
 
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
    <NatureComp/>
    <OrganicComp/>
    <Marcquee/>
+   <FooterContact/>
+   <FooterSection/>
     </>
   )
 }
