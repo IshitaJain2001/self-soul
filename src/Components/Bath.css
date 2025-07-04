@@ -1,0 +1,37 @@
+ @imports "./colors.css" ; 
+ .bath-video{
+    height: 359px;
+ }
+
+ .ingredients-section{
+    background:var(--pink-text);
+    height: 192px;
+     text-align: center;
+  padding: 40px 20px;
+  font-family: "Montserrat", sans-serif;
+ }
+
+ .ingredients-icons img{
+    height: 47px;
+    width: 233px;
+ }
+
+ .ingredients-section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+ .ingredients-section p {
+  font-size: 14px;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+.soaps-collection{
+    height: 4330px;
+    background: var(--pink-bg);
+}

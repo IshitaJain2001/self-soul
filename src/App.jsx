@@ -1,19 +1,11 @@
 import HeroSection from "./Components/HeroSection"
 import "./App.css"
-import BathRituals from "./Components/Bath-rituals"
-import ImageSection from "./Components/ImageSection"
-import Video from "./Components/Video"
-import ClinicalApprovals from "./Components/ClinicalApprovals"
-import BestSeller from "./Components/BestSeller"
-import Video2 from "./Components/Video2"
-import CleanBeauty from "./Components/CleanBeauty"
-import ImageSection2 from "./Components/Image-Section"
-import WhatTheySay from "./Components/WhatTheySay"
-import NatureComp from "./Components/NatureComp"
-import OrganicComp from "./Components/OrganicComp"
-import Marcquee from "./Components/Marcquee"
+
 import FooterContact from "./Components/Footer-Contact"
 import FooterSection from "./Components/FooterSection"
+import Home from "./Components/Home"
+import { Route, Routes } from "react-router-dom"
+import Bath from "./Components/Bath"
 
 
 function App() {
@@ -21,19 +13,13 @@ function App() {
 
   return (
     <>
-   <HeroSection/>  
-   <BathRituals/>
-   <ImageSection/>
-   <Video/>
-   <ClinicalApprovals/>
-   <BestSeller/>
-   <Video2/>
-   <CleanBeauty/>
-   <ImageSection2/>
-   <WhatTheySay/>
-   <NatureComp/>
-   <OrganicComp/>
-   <Marcquee/>
+
+   <Routes>
+
+    <Route path="/" element={<Home/>}/>
+    <Route path="/Bath-view-all" element={<Bath/>} />
+   </Routes>
+
    <FooterContact/>
    <FooterSection/>
     </>

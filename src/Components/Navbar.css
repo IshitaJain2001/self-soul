@@ -9,6 +9,7 @@ html, body {
 .navbar-container {
   width: 100vw;
   overflow: visible;
+  background-color: var(--pink-bg);
 }
 
 .navbar {
@@ -46,7 +47,10 @@ html, body {
   color: var(--green-text);
   font-weight: 700;
 }
-
+a{
+    color: var(--green-text);
+    text-decoration: none;
+}
 .nav-links li {
   padding: 8px 10px;
   border-radius: 999px;
@@ -90,23 +94,29 @@ html, body {
 }
 .dropdown-content{
   width: 50vw;
-  padding-top:65px ;
+  padding-top:30px ;
   position: absolute;
-  top: 0px;
+  top: 38px;
   left: 0px;
  display: flex;
  justify-content: space-between;
   z-index: 9999;
+   font-family: "Montserrat";
+    font-size: 14px;
+  font-weight: 400;
+}
+
+.positionn{
+  left: 100px;
 }
 
 
 
 .dropdown-content li{
   list-style-type: none;
-  font-size: 14px;
-  font-weight: 400;
+ 
   color: #1B3638;
-  font-size: "Montserrat";
+ 
 }
 
 .dropdown-img{
