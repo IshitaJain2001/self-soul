@@ -5,6 +5,8 @@ import searchIcon from "../assets/search.png";
 import heartIcon from "../assets/heart.png";
 import cartIcon from "../assets/cart.png";
 import userIcon from "../assets/profile.png";
+import img1 from "../assets/summer.png"
+import img2 from "../assets/winter.png"
 
 const Navbar = () => {
   const [showBathMenu, setShowBathMenu] = useState(false);
@@ -22,7 +24,7 @@ const Navbar = () => {
           <ul className="nav-links">
             <li className="active">Home</li>
 
-            <li
+            {/* <li
               className="dropdown"
               onMouseEnter={() => setShowBathMenu(true)}
               onMouseLeave={() => setShowBathMenu(false)}
@@ -30,7 +32,7 @@ const Navbar = () => {
               Bath
               {showBathMenu && (
                 <div className="dropdown-content">
-                  <div className="split-bg">
+                 
                   <ul className="dropdown-left">
                     <li>VIEW ALL</li>
                     <li>BATH SOAPS</li>
@@ -41,10 +43,41 @@ const Navbar = () => {
                     <li>BATH SOAKS</li>
                     <li>BATH POWDER</li>
                   </ul>
+                  <div className="dropdown-img">
+                    <img src={img1} alt="" />
+                    <img src={img2} alt="" />
                   </div>
-                </div>
+                  </div>
+
+             
               )}
-            </li>
+            </li> */}
+
+            <li className="dropdown-wrapper"
+  onMouseEnter={() => setShowBathMenu(true)}
+  onMouseLeave={() => setShowBathMenu(false)}
+>
+  <div className="dropdown">Bath</div>
+  {showBathMenu && (
+    <div className="dropdown-content">
+      <ul className="dropdown-left">
+        <li>VIEW ALL</li>
+        <li>BATH SOAPS</li>
+        <li>BATH SALTS</li>
+        <li>BATH OILS</li>
+        <li>BATH SCRUBS</li>
+        <li>BATH FIZZ</li>
+        <li>BATH SOAKS</li>
+        <li>BATH POWDER</li>
+      </ul>
+      <div className="dropdown-img">
+        <img src={img1} alt="" />
+        <img src={img2} alt="" />
+      </div>
+    </div>
+  )}
+</li>
+
 
             <li>Body</li>
             <li>Face</li>
