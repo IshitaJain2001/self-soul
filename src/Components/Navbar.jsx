@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../assets/logo.png";
 import searchIcon from "../assets/search.png";
@@ -7,15 +7,45 @@ import cartIcon from "../assets/cart.png";
 import userIcon from "../assets/profile.png";
 
 const Navbar = () => {
+  const [showBathMenu, setShowBathMenu] = useState(false);
+
   return (
+    <div className={`drop ${showBathMenu ? "active-drop" : ""}`}>
     <div className="navbar-container">
+    
+
+ 
       <nav className="navbar">
         <img src={logo} alt="Logo" className="logo" />
 
         <div className="nav-tab-wrapper">
           <ul className="nav-links">
             <li className="active">Home</li>
-            <li>Bath</li>
+
+            <li
+              className="dropdown"
+              onMouseEnter={() => setShowBathMenu(true)}
+              onMouseLeave={() => setShowBathMenu(false)}
+            >
+              Bath
+              {showBathMenu && (
+                <div className="dropdown-content">
+                  <div className="split-bg">
+                  <ul className="dropdown-left">
+                    <li>VIEW ALL</li>
+                    <li>BATH SOAPS</li>
+                    <li>BATH SALTS</li>
+                    <li>BATH OILS</li>
+                    <li>BATH SCRUBS</li>
+                    <li>BATH FIZZ</li>
+                    <li>BATH SOAKS</li>
+                    <li>BATH POWDER</li>
+                  </ul>
+                  </div>
+                </div>
+              )}
+            </li>
+
             <li>Body</li>
             <li>Face</li>
             <li>Value Sets</li>
@@ -33,6 +63,7 @@ const Navbar = () => {
           <img src={userIcon} alt="User" />
         </div>
       </nav>
+           </div>
     </div>
   );
 };

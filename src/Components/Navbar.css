@@ -1,25 +1,25 @@
 @import './colors.css';
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .navbar-container {
-
   width: 100vw;
-  height: 88px;
-
+  overflow: visible;
 }
 
 .navbar {
-
-    
   max-width: 1440px;
   height: 88px;
   display: flex;
   align-items: center;
-
   justify-content: space-evenly;
- 
+  position: relative;
+  z-index: 10;
 }
-
-
 
 .logo {
   height: 42px;
@@ -28,58 +28,75 @@
 }
 
 .nav-tab-wrapper {
-  background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(12px);
-
-
-    border-radius: 247px;
+  border-radius: 247px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.253);
 }
 
-
+/* Navigation links */
 .nav-links {
   display: flex;
   gap: 10px;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 10px 23px;
   color: var(--green-text);
   font-weight: 700;
-
-padding: 10px 23px;
-
-
-  
-
-
 }
 
 .nav-links li {
   padding: 8px 10px;
   border-radius: 999px;
-  transition: 0.3s ease;
+  transition: background-color 0.3s ease;
   cursor: pointer;
 }
 
-/* Highlighted nav item */
+
 .nav-links li.active {
   background-color: white;
   font-weight: bold;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Right-side icons */
+
+.nav-links li.dropdown:hover {
+  background-color: transparent !important;
+
+}
+
+.drop.active-drop {
+  background-color: var(--pink-text); 
+  height: 53vh;
+}
+
 .icons {
   display: flex;
- width: 150px;
- justify-content: space-between;
+  width: 150px;
+  justify-content: space-between;
   align-items: center;
 }
 
-.icons img{
+.icons img {
   height: 20px;
   width: 20px;
 }
+
+.dropdown-content{
+  width: 100vw;
+  position: absolute;
+  top: 70px;
+  left: 60px;
+ 
+}
+
+.dropdown-content li{
+  list-style-type: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1B3638;
+  font-size: "Montserrat";
+}
+
