@@ -188,11 +188,11 @@ const Navbar = () => {
               </li>
 
               <li
-                className={`dropdown-wrapper ${location.pathname.startsWith("/Body") ? "active" : ""}`}
+                className={`dropdown-wrapper`}
                 onMouseEnter={() => setShowBodyMenu(true)}
                 onMouseLeave={() => setShowBodyMenu(false)}
               >
-                <Link to="/Body">Body</Link>
+               Body
 
                 {showBodyMenu && (
                   <div className="dropdown-content">
@@ -208,7 +208,7 @@ const Navbar = () => {
               </li>
 
               <li
-                className={`dropdown-wrapper ${location.pathname.startsWith("/face") ? "active" : ""}`}
+                className={`dropdown-wrapper ${location.pathname.startsWith("/Face") ? "active" : ""}`}
                 onMouseEnter={() => setShowFaceMenu(true)}
                 onMouseLeave={() => setShowFaceMenu(false)}
               >
@@ -217,9 +217,12 @@ const Navbar = () => {
                 {showFaceMenu && (
                   <div className="dropdown-content">
                     <ul className="dropdown-left">
-                      <Link to="/face-view-all"><li>VIEW ALL</li></Link>
-                      <li>FACEWASH</li>
-                      <li>FACE SCRUB</li>
+                      <Link to="/Face-view-all"><li>VIEW ALL</li></Link>
+                     <Link to="/Facewash"><li>FACEWASH</li>
+                     </Link> 
+                   <Link to="/Facescrubs">
+                   <li>FACE SCRUB</li>
+                   </Link>   
                     </ul>
                     <div className="dropdown-img">
                       <img src={rosebar} alt="rosebar" />

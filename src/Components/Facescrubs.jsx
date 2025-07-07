@@ -1,16 +1,13 @@
  import React from 'react'
 import Navbar from './Navbar'
  
- export default function Faceviewall() {
+ export default function Facescrubs() {
    return (
      <div>
         <div className="viewall-nav">
-<Navbar/>
+            <Navbar/>
         </div>
-
-        
-        
-        Faceviewall</div>
+        Facescrubs</div>
    )
  }
  

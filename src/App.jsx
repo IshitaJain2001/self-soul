@@ -14,6 +14,8 @@ import Bathfizz from "./Components/Bathfizz"
 import Bathsoak from "./Components/Bathsoak"
 import Bathpowder from "./Components/Bathpowder"
 import Faceviewall from "./Components/Faceviewall"
+import Facewash from "./Components/Facewash"
+import Facescrubs from "./Components/Facescrubs"
 
 
 function App() {
@@ -34,7 +36,9 @@ function App() {
     <Route path="/Bath-fizz" element={<Bathfizz/>}/>
     <Route path="/Bath-soaks" element={<Bathsoak/>}/>
     <Route path="/Bath-powder" element={<Bathpowder/>}/>
-<Route path="/face-view-all"element={<Faceviewall/>} />
+<Route path="/Face-view-all"element={<Faceviewall/>} />
+<Route path="/Facewash" element={<Facewash/>}/>
+<Route path="/Facescrubs" element={<Facescrubs/>}/>
    
    </Routes>
 
