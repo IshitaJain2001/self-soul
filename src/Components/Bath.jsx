@@ -3,8 +3,11 @@ import "./Bath.css"
 import img from "../assets/bathingr.png"
  export default function Bath(){
     return(
-        <>
-        <Navbar/>
+        <div>
+          <div className="viewall-nav">
+<Navbar/>
+          </div>
+        
     <video src="" className="bath-video"></video>
         <div className="ingredients-section">
       <h2>98% Natural Ingredients</h2>
@@ -14,13 +17,13 @@ import img from "../assets/bathingr.png"
       </p>
 
       <div className="ingredients-icons">
-        <img src={img} alt="" />
+        <img src={img} alt="bath" />
       </div>
     </div>
 
     <div className="soaps-collection">
         
     </div>
-        </>
+        </div>
     )
  }

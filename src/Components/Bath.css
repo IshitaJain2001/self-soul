@@ -2,7 +2,11 @@
  .bath-video{
     height: 359px;
  }
-
+.viewall-nav{
+   background-color: var(--pink-bg);
+   height:88px ;
+ 
+}
  .ingredients-section{
     background:var(--pink-text);
     height: 192px;

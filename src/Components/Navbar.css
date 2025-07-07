@@ -37,7 +37,7 @@ html, body {
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.253);
 }
 
-/* Navigation links */
+
 .nav-links {
   display: flex;
   gap: 10px;
@@ -109,16 +109,16 @@ a{
   width: 20px;
 }
 .dropdown-wrapper {
-  position: relative;
+ 
   display: inline-block;
     z-index: 20;
 }
 .dropdown-content {
   width: 50vw;
-  padding-top: 50px;
+  padding-top: 70px;
   position: absolute;
   top: 0px;
-  left: 0;
+  left: 90px;
   display: flex;
   justify-content: space-between;
 
@@ -126,19 +126,17 @@ a{
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  border-radius: 10px; /* optional */
+  border-radius: 10px; 
  
 }
 
 .dropdown-wrapper {
-  position: relative;
-  display: block;   /* important: so it wraps li + dropdown-content */
+  
+  display: block;   
   z-index: 20;
   
 }
-.positionn{
-  left: 100px;
-}
+
 
 
 
