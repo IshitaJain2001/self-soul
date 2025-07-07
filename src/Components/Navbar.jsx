@@ -165,7 +165,7 @@ const Navbar = () => {
               </li>
              
            
-              <li>Our Heritage</li>
+            <Link to="/our-heritage"> <li>Our Heritage</li> </Link>  
               <li>Blogs</li>
               <li>Contact Us</li>
             </ul>

@@ -1,0 +1,29 @@
+ @imports "./colors.css";
+ 
+ .origin-heritage{
+    height: 325px;
+    width: 100%;
+background-color: var(--pink-bg);
+display: flex;
+justify-content: center;
+align-items: center;
+
+ }
+
+ .inner{
+    width: 842px;
+    text-align: center;
+    height: 180px;
+
+ }
+ .inner > * {
+  margin-bottom: 20px;
+  font-family: "Montserrat";
+  color: var(--bath-rituals);
+}
+.inner p{
+    font-size: 12px;
+    word-spacing: 1.4;
+    line-height: 1.8;
+    color: var(--green-text);
+}

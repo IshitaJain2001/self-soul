@@ -17,6 +17,11 @@ import Faceviewall from "./Components/Faceviewall"
 import Facewash from "./Components/Facewash"
 import Facescrubs from "./Components/Facescrubs"
 import Giftviewall from "./Components/Giftviewall"
+import Giftbath from "./Components/Giftbath"
+import Giftskincare from "./Components/Giftskincare"
+import Giftminiset from "./Components/Giftminiset"
+import Giftselfcare from "./Components/Giftselfcare"
+import Heritage from "./Components/Heritage"
 
 
 function App() {
@@ -41,6 +46,11 @@ function App() {
 <Route path="/Facewash" element={<Facewash/>}/>
 <Route path="/Facescrubs" element={<Facescrubs/>}/>
    <Route path="Gift-view-all" element={<Giftviewall/>}/> 
+   <Route path="/Gift-bathbox" element={<Giftbath/>}/>
+   <Route path="/Gift-skincare" element={<Giftskincare/>}/>
+   <Route path="/Gift-miniset" element={<Giftminiset/>}/>
+   <Route path="/Gift-selfcare" element={<Giftselfcare/>}/>
+   <Route path="/our-heritage" element={<Heritage/>}/>
    </Routes>
 
    <FooterContact/>
