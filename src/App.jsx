@@ -16,6 +16,7 @@ import Bathpowder from "./Components/Bathpowder"
 import Faceviewall from "./Components/Faceviewall"
 import Facewash from "./Components/Facewash"
 import Facescrubs from "./Components/Facescrubs"
+import Giftviewall from "./Components/Giftviewall"
 
 
 function App() {
@@ -39,7 +40,7 @@ function App() {
 <Route path="/Face-view-all"element={<Faceviewall/>} />
 <Route path="/Facewash" element={<Facewash/>}/>
 <Route path="/Facescrubs" element={<Facescrubs/>}/>
-   
+   <Route path="Gift-view-all" element={<Giftviewall/>}/> 
    </Routes>
 
    <FooterContact/>

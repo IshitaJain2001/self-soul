@@ -109,15 +109,16 @@ a{
   width: 20px;
 }
 .dropdown-wrapper {
- 
+
+
   display: inline-block;
     z-index: 20;
 }
 .dropdown-content {
   width: 50vw;
-  padding-top: 70px;
+  padding-top: 20px;
   position: absolute;
-  top: 0px;
+  /* top: 100%; */
   left: 90px;
   display: flex;
   justify-content: space-between;
