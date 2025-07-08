@@ -194,7 +194,7 @@ export default function Heritage() {
 
       <div className="our-heritage-cards">
      <Link to="/know-our-ingredients"><div className="card"><img src={img1} alt="" /></div> </Link>   
-        <div className="card"><img src={img2} alt="" /></div>
+      <Link to="/clinical-testing"> <div className="card"><img src={img2} alt="" /></div></Link>  
         <div className="card"><img src={img3} alt="" /></div>
       </div>
 

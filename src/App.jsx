@@ -23,6 +23,7 @@ import Giftminiset from "./Components/Giftminiset"
 import Giftselfcare from "./Components/Giftselfcare"
 import Heritage from "./Components/Heritage"
 import Ingredients from "./Components/Ingredients"
+import ClinicallTested from "./Components/ClinicallTested"
 
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
    <Route path="/Gift-selfcare" element={<Giftselfcare/>}/>
    <Route path="/our-heritage" element={<Heritage/>}/>
    <Route path="/know-our-ingredients" element={<Ingredients/>}/>
+   <Route path="/clinical-testing" element={<ClinicallTested/>}/>
    </Routes>
 
    <FooterContact/>
