@@ -204,7 +204,7 @@ export default function Heritage() {
           <h4>ABOUT OUR STORY</h4>
           <h2>Hi, My Name is Aanchal</h2>
           <p>I founded Inoki Self Soul out of my deep love for bath rituals and because nothing like it existed—a physical product crafted from premium teas and botanicals that authentically captures the tranquility of luxury bathhouses.</p>
-          <button>Read More About Us</button>
+       <Link to="/Our-Story"> <button>Read More About Us</button></Link>   
         </div>
       </div>
 

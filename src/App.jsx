@@ -24,6 +24,7 @@ import Giftselfcare from "./Components/Giftselfcare"
 import Heritage from "./Components/Heritage"
 import Ingredients from "./Components/Ingredients"
 import ClinicallTested from "./Components/ClinicallTested"
+import OurStory from "./Components/OurStory"
 
 
 function App() {
@@ -55,6 +56,7 @@ function App() {
    <Route path="/our-heritage" element={<Heritage/>}/>
    <Route path="/know-our-ingredients" element={<Ingredients/>}/>
    <Route path="/clinical-testing" element={<ClinicallTested/>}/>
+   <Route path="/Our-Story" element={<OurStory/>}/>
    </Routes>
 
    <FooterContact/>
