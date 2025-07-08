@@ -1,29 +1,186 @@
- @imports "./colors.css";
- 
- .origin-heritage{
-    height: 325px;
-    width: 100%;
-background-color: var(--pink-bg);
-display: flex;
-justify-content: center;
-align-items: center;
+@import "./colors.css";
 
- }
+/* === ORIGIN HERITAGE SECTION === */
+.origin-heritage {
+  height: 325px;
+  width: 100%;
+  background-color: var(--pink-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
- .inner{
-    width: 842px;
-    text-align: center;
-    height: 180px;
+.inner {
+  width: 842px;
+  text-align: center;
+  height: 180px;
+}
 
- }
- .inner > * {
+.inner > * {
   margin-bottom: 20px;
   font-family: "Montserrat";
   color: var(--bath-rituals);
 }
-.inner p{
-    font-size: 12px;
-    word-spacing: 1.4;
-    line-height: 1.8;
-    color: var(--green-text);
+
+.inner p {
+  font-size: 12px;
+  word-spacing: 1.4;
+  line-height: 1.8;
+  color: var(--green-text);
 }
+
+/* === HERITAGE CARDS === */
+.our-heritage-cards {
+  background: var(--green-text);
+  height: 543px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.our-heritage-cards .card,
+.our-heritage-cards .card img {
+  height: 415px;
+  width: 324px;
+}
+
+/* === OUR STORY SECTION === */
+.our-story {
+  height: 543px;
+  background-color: var(--pink-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.our-story .profile {
+  height: 430px;
+  width: 430px;
+  background: rgb(138, 15, 35);
+}
+
+.our-story .profile-content {
+  height: 230px;
+  width: 519px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.our-story .profile-content p {
+  height: 50px;
+  width: 519px;
+}
+
+.our-story .profile-content button {
+  background-color: var(--bath-rituals);
+  color: var(--pink-bg);
+  height: 42px;
+  width: 232px;
+  border-radius: 999px;
+}
+
+/* === FOOTER === */
+.footer-container {
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.footer-container img {
+  height: 337.5px;
+}
+
+.footer-outlay {
+  position: absolute;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.footer-outlay img {
+  height: 117px;
+  width: 556px;
+}
+
+/* === SENSATIONS PAGE SECTION === */
+.sensationspage {
+  height: 2134px;
+  background: var(--pink-bg);
+  transform: translateY(-4px);
+  padding-top: 70px;
+}
+
+.sections {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.sections img {
+  height: 397px;
+  width: 632px;
+}
+
+.sections-content {
+  height: 160px;
+  width: 556px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sections-content p {
+  height: 50px;
+}
+
+.sections-content p,
+.sections-content h4 {
+  color: var(--green-text);
+}
+
+.sections-content h2 {
+  color: var(--bath-rituals);
+}
+
+.sections-content button {
+  background-color: var(--bath-rituals);
+  color: var(--pink-bg);
+  height: 42px;
+  width: 232px;
+  border-radius: 999px;
+  display: inline-block;
+}
+.sensations-section {
+  width: 1210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+  gap: 50px;
+}
+.card-section {
+  display: flex;
+  width:100% ;
+  flex-direction: row;
+  overflow-x: scroll;
+  gap: 10px;
+margin: 0 auto;
+  padding: 10px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+}
+
+.card-section::-webkit-scrollbar {
+  display: none;              
+}
+
+.card-section img {
+  height: 366px;
+  width: 350px;
+  flex-shrink: 0;
+            }

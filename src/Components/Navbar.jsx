@@ -165,7 +165,7 @@ const Navbar = () => {
               </li>
              
            
-            <Link to="/our-heritage"> <li>Our Heritage</li> </Link>  
+            <Link to="/our-heritage"> <li  className={`dropdown-wrapper ${location.pathname.startsWith("/our") ? "active" : ""}`}>Our Heritage</li> </Link>  
               <li>Blogs</li>
               <li>Contact Us</li>
             </ul>
