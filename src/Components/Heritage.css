@@ -184,3 +184,39 @@ margin: 0 auto;
   width: 350px;
   flex-shrink: 0;
             }
+
+            .scroll-controls {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+.scroll-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--green-text);
+}
+.info{
+    font-family: "Montserrat";
+      color: var(--bath-rituals);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 20px;
+}
+.info h3{
+    font-weight: 600;
+}
+.info p{
+    height: 40px;
+    width: 300px;
+    line-height: 1.5;
+  
+}
+
+.info a{
+    text-decoration: underline;
+    font-weight: 500;
+}
