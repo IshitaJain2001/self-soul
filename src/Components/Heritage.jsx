@@ -144,6 +144,7 @@ import iceland from '../assets/iceland.png';
 import japan from '../assets/japan.png';
 import egypt from '../assets/egypt.png';
 import taiwan from '../assets/taiwan.png';
+import { Link } from 'react-router-dom';
 
 export default function Heritage() {
   const scrollRef = useRef(null);
@@ -174,7 +175,7 @@ export default function Heritage() {
   };
 
   return (
-    <div>
+    <div className='heritage'>
       <div className="viewall-nav">
         <Navbar />
       </div>
@@ -192,7 +193,7 @@ export default function Heritage() {
       </div>
 
       <div className="our-heritage-cards">
-        <div className="card"><img src={img1} alt="" /></div>
+     <Link to="/know-our-ingredients"><div className="card"><img src={img1} alt="" /></div> </Link>   
         <div className="card"><img src={img2} alt="" /></div>
         <div className="card"><img src={img3} alt="" /></div>
       </div>

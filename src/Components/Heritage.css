@@ -220,3 +220,7 @@ margin: 0 auto;
     text-decoration: underline;
     font-weight: 500;
 }
+
+.heritage video{
+    height: 350px;
+}
