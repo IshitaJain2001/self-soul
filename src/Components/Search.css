@@ -1,0 +1,31 @@
+ @imports "./color.css";
+ 
+ .search-container{
+    height: 540px;
+    background-color:#D1D5DB;
+ }
+
+ .search-container .input{
+    height: 88px;
+    width: 100vw;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .input input{
+    height: 46px;
+    width: 640px;
+    border-radius: 999px;
+    background-color: transparent;
+    border: 1px solid var(--green-text);
+    padding-left: 55px;
+ }
+
+ .input .search-icon{
+    height: 24px;
+    width: 24px;
+    position: relative;
+    left: 50px;
+ }

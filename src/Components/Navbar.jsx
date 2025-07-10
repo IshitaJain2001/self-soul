@@ -166,13 +166,13 @@ const Navbar = () => {
              
            
             <Link to="/our-heritage"> <li  className={`dropdown-wrapper ${location.pathname.startsWith("/our") ? "active" : ""}`}>Our Heritage</li> </Link>  
-              <li>Blogs</li>
+            <Link to="/Blogs" > <li className={`dropdown-wrapper ${location.pathname.startsWith("/Blogs") ? "active" : ""}`}>Blogs</li></Link>  
               <li>Contact Us</li>
             </ul>
           </div>
 
           <div className="icons">
-            <img src={searchIcon} alt="Search" />
+       <Link to="/search"> <img src={searchIcon} alt="Search" /> </Link>    
             <img src={heartIcon} alt="Wishlist" />
             <img src={cartIcon} alt="Cart" />
             <img src={userIcon} alt="User" />

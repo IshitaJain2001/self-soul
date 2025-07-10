@@ -26,6 +26,8 @@ import Ingredients from "./Components/Ingredients"
 import ClinicallTested from "./Components/ClinicallTested"
 import OurStory from "./Components/OurStory"
 import CreatedConsciously from "./Components/CreatedConsciously"
+import Blogs from "./Components/Blogs"
+import Search from "./Components/Search"
 
 
 function App() {
@@ -59,6 +61,8 @@ function App() {
    <Route path="/clinical-testing" element={<ClinicallTested/>}/>
    <Route path="/Our-Story" element={<OurStory/>}/>
    <Route path="/Creation" element={<CreatedConsciously/>}/>
+   <Route path="/Blogs" element={<Blogs/>}/>
+   <Route path="/Search" element={<Search/>}/>
    </Routes>
 
    <FooterContact/>
