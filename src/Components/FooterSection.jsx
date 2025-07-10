@@ -4,6 +4,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { MdOutlineMailOutline } from "react-icons/md";
+import { Link } from 'react-router-dom';
 export default function FooterSection() {
   return (
     <div className='footerSection-container'>
@@ -28,8 +29,10 @@ export default function FooterSection() {
 
     <ul className="footer-col">
       <h4>SUPPORT</h4>
-      <li>FAQs</li>
-      <li>Contact Us</li>
+     <Link to="/FAQ">  <li>FAQs</li> </Link>
+    <Link to="/Contact">
+    <li>Contact Us</li>
+    </Link>  
     </ul>
 
     <ul className="footer-col">

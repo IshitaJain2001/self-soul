@@ -28,6 +28,8 @@ import OurStory from "./Components/OurStory"
 import CreatedConsciously from "./Components/CreatedConsciously"
 import Blogs from "./Components/Blogs"
 import Search from "./Components/Search"
+import FAQ from "./Components/FAQ"
+import Contact from "./Components/Contact"
 
 
 function App() {
@@ -63,6 +65,8 @@ function App() {
    <Route path="/Creation" element={<CreatedConsciously/>}/>
    <Route path="/Blogs" element={<Blogs/>}/>
    <Route path="/Search" element={<Search/>}/>
+   <Route path="/FAQ" element={<FAQ/>}/>
+   <Route path="/Contact" element={<Contact/>}/>
    </Routes>
 
    <FooterContact/>
