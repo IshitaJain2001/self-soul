@@ -102,3 +102,55 @@ margin: 20px auto;
     text-align: center;
     margin-top: 10px;
 }
+
+.cart-items{
+  height: auto;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.cart-item{
+  height: 190px;
+  border-bottom: 1px solid var(--green-text);
+    width: 360px;
+}
+
+.cart-item h3{
+  color: var(--bath-rituals);
+
+  
+}
+.cart-item .buttons{
+  display: flex;
+  width: 180px;
+  justify-content: space-between;
+  margin-left: 152px;
+  margin-top: 90px;
+  align-items: center;
+}
+.cart-item .quan{
+  width: 94px;
+  height: 24px;
+  border: 1px solid var(--bath-rituals);
+  border-radius: 999px;
+  display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.quan button{
+  background-color: transparent;
+  border: none;
+  display: block;
+}
+
+.cart-item .titles{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: space-between;
+  margin-left: 152px;
+  width: 167px;
+}
