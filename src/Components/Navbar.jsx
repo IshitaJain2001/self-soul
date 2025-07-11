@@ -13,6 +13,7 @@ import img2 from "../assets/winter.png";
 import { Link, useLocation } from "react-router-dom";
 import rosebar from "../assets/rosebar.png";
 import scrub from "../assets/scrub.png";
+import { useDispatch } from "react-redux";
 
 const Navbar = () => {
   const [showBathMenu, setShowBathMenu] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
     const [showValueMenu, setValueMenu] = useState(false);
      const [showGiftMenu, setGiftMenu] = useState(false);
   const location = useLocation();
-
+const dispatch= useDispatch()
   return (
     <div className={`drop ${showBathMenu || showBodyMenu || showFaceMenu||showValueMenu||showGiftMenu ? "active-drop" : ""}`}>
       <div className="navbar-container">
@@ -173,8 +174,10 @@ const Navbar = () => {
 
           <div className="icons">
        <Link to="/search"> <img src={searchIcon} alt="Search" /> </Link>    
-            <img src={heartIcon} alt="Wishlist" />
-            <img src={cartIcon} alt="Cart" />
+        <Link to="/Wishlist">  <img src={heartIcon} alt="Wishlist" /> </Link>  
+         <Link onClick={()=>dispatch({
+          type:"TOGGLE_CART"
+         })}> <img src={cartIcon} alt="Cart" /></Link>   
             <img src={userIcon} alt="User" />
           </div>
         </nav>

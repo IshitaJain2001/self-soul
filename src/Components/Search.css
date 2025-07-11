@@ -2,7 +2,7 @@
  
  .search-container{
     height: 540px;
-    background-color:#D1D5DB;
+   background: var(--pink-bg);
     padding-top: 30px;
  }
 

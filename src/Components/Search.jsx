@@ -2,9 +2,16 @@
  import "./Search.css"
  import { RxCross1 } from "react-icons/rx";
  import searchIcon from "../assets/search.png";
+import Navbar from './Navbar';
  export default function Search() {
    return (
+    <>
+    
+      <div className="viewall-nav">
+        <Navbar/>
+      </div>
      <div className='search-container'>
+  
         <div className="input">
             <img src={searchIcon} alt="Search" className='search-icon'/>
   <input type="text" name="" id="" placeholder='Search Item'/>
@@ -20,6 +27,7 @@
         <p>No products found</p>
        </div>
      </div>
+     </>
    )
  }
  

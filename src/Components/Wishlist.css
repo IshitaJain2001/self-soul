@@ -1,0 +1,6 @@
+@imports "./colors.css" ;
+.wishlist{
+    height: 410px;
+    width: 100vw;
+    background: var(--pink-bg);
+ }

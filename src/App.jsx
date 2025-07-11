@@ -30,6 +30,8 @@ import Blogs from "./Components/Blogs"
 import Search from "./Components/Search"
 import FAQ from "./Components/FAQ"
 import Contact from "./Components/Contact"
+import Wishlist from "./Components/Wishlist"
+import Cart from "./Components/Cart"
 
 
 function App() {
@@ -67,8 +69,10 @@ function App() {
    <Route path="/Search" element={<Search/>}/>
    <Route path="/FAQ" element={<FAQ/>}/>
    <Route path="/Contact" element={<Contact/>}/>
+   <Route path="/Wishlist" element={<Wishlist/>}/>
+  
    </Routes>
-
+<Cart/>
    <FooterContact/>
    <FooterSection/>
     </>

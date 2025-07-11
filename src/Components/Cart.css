@@ -1,0 +1,104 @@
+@imports "./colors.css";
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 9998;
+}
+
+/* Cart Panel */
+.cart-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100vh;
+background: var(--pink-text);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease-in-out;
+  z-index: 9999;
+  /* padding: 20px; */
+  overflow-y: auto;
+  font-family: "Montserrat";
+}
+
+.cart-panel.closed {
+  right: -100%;
+}
+
+.cart-header {
+  display: flex;
+padding-left: 20px;
+ gap: 50px;
+  align-items: center;
+  height: 80px;
+     border-bottom: 1px solid var(--green-text);
+}
+.cart-header h2{
+    /* height: 50px; */
+   
+    font-size: 28px;
+    color: var(--bath-rituals);
+    font-weight: 500;
+ 
+    /* text-align: center;
+    padding:0 20px; */
+
+}
+
+.cart-header button{
+    background: transparent;
+margin-top: 8px;
+    border: 0px;
+    font-size: 50px;
+}
+
+.cart-empty-message {
+ color: var(--bath-rituals);
+
+  font-weight: 500;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.cart-button-primary {
+  background-color: var(--bath-rituals);
+  color: #ffffff;
+  border: none;
+display: block;
+margin: 20px auto;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  width: 100%;
+  cursor: pointer;
+  height: 46px;
+  width: 336px;
+  border-radius: 999px;
+  font-weight: 400;
+}
+
+.cart-button-secondary {
+/* background-color: var(--bath-rituals); */
+  color: var(--bath-rituals);
+  border: none;
+display: block;
+margin: 20px auto;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  width: 100%;
+  cursor: pointer;
+  height: 46px;
+  width: 336px;
+  border-radius: 999px;
+  border: 1px solid var(--bath-rituals);
+}
+.whoo{
+    color: var(--green-text);
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
