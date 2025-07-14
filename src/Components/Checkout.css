@@ -5,8 +5,12 @@
     padding: 30px;
     background: var(--pink-bg);
     font-family: "Montserrat";
+    /* display: flex; */
  }
-
+.checkout-parts {
+   display: flex;
+   margin-top: 45px;
+}
  .checkout-container h1{
     text-align: center;
     color: var(--bath-rituals);
@@ -16,7 +20,7 @@
  .profile-details{
     width: 50%;
 border-right:1px solid var(--bath-rituals) ;
-margin-top: 45px;
+
  
  }
 
@@ -119,3 +123,6 @@ hr{
    margin-top: 60px;
 }
 
+.cart-details{
+   width: 50%;
+}

@@ -16,7 +16,7 @@
 
            
       </div>
-        <div className="email">
+        <div className="emaill">
     <div className="email-inner">
       <h2>STAY UP TO DATE</h2>
       <input type="text" name="" id="" placeholder='Enter Email'/>

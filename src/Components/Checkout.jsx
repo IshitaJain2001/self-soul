@@ -5,6 +5,7 @@ import Navbar from './Navbar'
  import { BsBank } from "react-icons/bs";
  import { HiCash } from "react-icons/hi";
  import imgg from "../assets/upi.png"
+import { useSelector } from 'react-redux';
  export default function Checkout() {
       const radioRef = useRef(null);
   const [isChecked, setIsChecked] = useState(false);
@@ -16,15 +17,20 @@ import Navbar from './Navbar'
       setIsChecked(true);
     }
   };
+  const cartItems = useSelector((state) => state.cartDetails.product);
+const totalAmount = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
    return (
     <>
     
   <div className="viewall-nav">
     <Navbar/>
   </div>
+    
      <div className='checkout-container'>
-        <h1>CHECKOUT</h1>
-        <div className="profile-details">
+      <h1>CHECKOUT</h1>
+
+      <div className="checkout-parts">
+   <div className="profile-details">
    <div className="head">
       <label htmlFor="">CONTACT</label>
  <a href="">Log in</a>
@@ -100,7 +106,26 @@ import Navbar from './Navbar'
         </button>
         <hr />
         </div>
+
+
         
+   <div className="cart-details">
+    {
+      cartItems.length>0?
+      cartItems.map((item,index)=>{return(
+<div key={index}>
+              <li>{item.item}</li>
+              <p>{item.price*item.quantity}</p>
+          </div>
+    
+      )
+        
+      })
+      : <p>nothing in the cart</p>
+    }
+    </div>   
+      </div>
+       
      </div>
        </>
    )

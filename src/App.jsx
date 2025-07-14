@@ -33,6 +33,11 @@ import Contact from "./Components/Contact"
 import Wishlist from "./Components/Wishlist"
 import Cart from "./Components/Cart"
 import Checkout from "./Components/Checkout"
+import PrivacyPolicy from "./Components/PrivacyPolicy"
+import TermsConditions from "./Components/TermsConditions"
+import ReturnPolicy from "./Components/ReturnPolicy"
+import DeliveryInfo from "./Components/DeliveryInfo"
+import WhatDifferent from "./Components/WhatDifferent"
 
 
 function App() {
@@ -72,6 +77,11 @@ function App() {
    <Route path="/Contact" element={<Contact/>}/>
    <Route path="/Wishlist" element={<Wishlist/>}/>
   <Route path="/Checkout" element={<Checkout/>}/>
+  <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>}/>
+  <Route path="/Terms&Conditions" element={<TermsConditions/>}/>
+  <Route path="/Returnpolicy" element={<ReturnPolicy/>}/>
+  <Route path="/DeliveryInfo" element={<DeliveryInfo/>}/>
+  <Route path="/What's-different" element={<WhatDifferent/>}/>
    </Routes>
 <Cart/>
    <FooterContact/>

@@ -13,8 +13,8 @@ export default function FooterSection() {
     
     <ul className="footer-col">
       <h4>The Self'soul STORE</h4>
-      <li>Our Heritage</li>
-      <li>What Makes Us Different</li>
+    <Link to="/our-heritage"> <li>Our Heritage</li> </Link> 
+    <Link to="/What's-different"> <li>What Makes Us Different</li></Link>  
     </ul>
 
     <ul className="footer-col">
@@ -37,10 +37,15 @@ export default function FooterSection() {
 
     <ul className="footer-col">
       <h4>USEFUL LINKS</h4>
-      <li>Privacy Policy</li>
-      <li>Terms & Conditions</li>
-      <li>Returns & Refund policy</li>
-      <li>Delivery Enquiries</li>
+    <Link to="/Privacypolicy">  <li>Privacy Policy</li>
+    </Link> 
+    <Link to="/Terms&Conditions">
+    <li>Terms & Conditions</li>
+    </Link>  
+    <Link to="/Returnpolicy"> 
+    <li>Returns & Refund policy</li>
+    </Link>  
+    <Link to="/DeliveryInfo"><li>Delivery Enquiries</li> </Link>  
     </ul>
 
     <ul className="footer-col">
