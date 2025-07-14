@@ -2,11 +2,13 @@ import { useSelector, useDispatch } from "react-redux";
 import "./Cart.css";
 import { RxCaretLeft } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
+import { Link } from "react-router-dom";
 export default function Cart() {
   const isOpen = useSelector((state) => state.isCartOpen);
   const dispatch = useDispatch();
 
 const cartItems = useSelector((state) => state.cartDetails.product);
+const totalAmount = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   return (
     <>
@@ -60,7 +62,12 @@ const cartItems = useSelector((state) => state.cartDetails.product);
     
   </div>
 ))}
-
+<div className="cart-footer ">
+<Link to="/Checkout">
+<button className="cart-button-primary">CHECKOUT - ₹{totalAmount}</button>
+</Link>  
+  <p>Tax Included. Shipping calculated at Checkout.</p>
+</div>
           </div>
         )}
 

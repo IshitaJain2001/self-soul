@@ -154,3 +154,16 @@ align-items: center;
   margin-left: 152px;
   width: 167px;
 }
+.cart-footer{
+  margin-top: 235px;
+}
+.cart-footer .cart-button-primary{
+  font-size: 18px;
+}
+
+.cart-footer p{
+  color: var(--green-text);
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20px;
+}

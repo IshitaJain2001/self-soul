@@ -32,6 +32,7 @@ import FAQ from "./Components/FAQ"
 import Contact from "./Components/Contact"
 import Wishlist from "./Components/Wishlist"
 import Cart from "./Components/Cart"
+import Checkout from "./Components/Checkout"
 
 
 function App() {
@@ -70,7 +71,7 @@ function App() {
    <Route path="/FAQ" element={<FAQ/>}/>
    <Route path="/Contact" element={<Contact/>}/>
    <Route path="/Wishlist" element={<Wishlist/>}/>
-  
+  <Route path="/Checkout" element={<Checkout/>}/>
    </Routes>
 <Cart/>
    <FooterContact/>
