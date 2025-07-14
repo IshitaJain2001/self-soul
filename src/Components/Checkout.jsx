@@ -1,6 +1,10 @@
  import React, { useRef, useState } from 'react'
 import Navbar from './Navbar'
  import "./Checkout.css"
+ import { IoMdCard } from "react-icons/io";
+ import { BsBank } from "react-icons/bs";
+ import { HiCash } from "react-icons/hi";
+ import imgg from "../assets/upi.png"
  export default function Checkout() {
       const radioRef = useRef(null);
   const [isChecked, setIsChecked] = useState(false);
@@ -56,8 +60,47 @@ import Navbar from './Navbar'
 </div>
 
 </div>
+<div className="payment-details">
+    <label htmlFor="">PAYMENT</label>
+    <span>All transactions are secure and encrypted.</span>
+<div>
+    <div>
+       <input type="radio" name="" id="" /> 
+     <span>UPI</span>
+      </div>
+     <img src={imgg} alt="" />
+    </div>  
+    <div>
+      <div>
+  <input type="radio" name="" id="" />
+  <span>Debit or Credit Card</span>
+      </div>
 
+  <IoMdCard />
+    </div>
+ <div>
+ <div>
+   <input type="radio" name="" id="" />
+  <span>Net Banking</span>
+ </div>
+  <BsBank />
+ </div>
+ <div>
+  <div>
+ <input type="radio" name="" id="" />
+   <span>Pay on Delivery</span>
+  </div>
+  
+   <HiCash />
+ </div>
+
+</div>
+<button className='proceed-btn'>
+          PROCEED
+        </button>
+        <hr />
         </div>
+        
      </div>
        </>
    )
