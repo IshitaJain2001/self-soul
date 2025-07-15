@@ -1,7 +1,7 @@
 @imports "./colors.css";
 
 .main-container{
-    height: 1500px;
+    height: 2100px;
     background: var(--pink-bg);
     color: var(--green-text);
  }
@@ -44,3 +44,24 @@
  border:1px solid var(--green-text);
  border-radius: 999px;
  }
+
+   .packaging-images{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  
+    margin-top: 50px;
+    width: 85%;
+    margin: 50px auto;
+  }
+  .packaging-images img{
+    height: 300px;
+    width: 270px;
+  }
+.pack-head{
+   margin-top: 50px;
+}
+  .pack-span{
+   display: block;
+   text-align: center;
+   margin-top: 20px;
+  }

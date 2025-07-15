@@ -19,6 +19,10 @@ import img25 from "../assets/img7.png"
 import img26 from "../assets/img8.png"
 import { RxCaretRight } from "react-icons/rx";
 import { Link } from 'react-router-dom'
+  import imgg1 from "../assets/packaging1.png"
+    import imgg2 from "../assets/packaging2.png"
+      import imgg3 from "../assets/packaging3.png"
+        import imgg4 from "../assets/packaging4.png"
  export default function WhatDifferent() {
     
     const arr= [
@@ -80,10 +84,22 @@ import { Link } from 'react-router-dom'
   })}
 </div>
 
- <Link >
+ <Link to="/know-our-ingredients">
   <button>Learn More About Our Ingredients <RxCaretRight /></button>
  </Link> 
-    
+    <h1 className='pack-head'>About Our Eco-Conscious Packaging</h1>
+    <span className='pack-span'>Hover over each packaging element to understand what's recyclable or compostable.</span>
+    <div className="packaging-images">
+        <img src={imgg1} alt="" />
+        
+        <img src={imgg2} alt="" />
+        <img src={imgg3} alt="" />
+        <img src={imgg4} alt="" />
+    </div>
+
+     <Link to="/Creation">
+  <button>Learn More About Our Conscious Calls <RxCaretRight /></button>
+ </Link> 
         </div>
         </div>
    )
