@@ -155,20 +155,28 @@
   display: inline-block;
 }
 .sensations-section {
-  width: 1210px;
+width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 50px;
   gap: 50px;
+
+  margin-bottom: 0px;
+  height: 700px;
+}
+.sechead {
+display: block;
+ text-align: center;
 }
 .card-section {
+  width: 1200px;
   display: flex;
   width:100% ;
   flex-direction: row;
   overflow-x: scroll;
   gap: 10px;
-margin: 0 auto;
+margin-left: 200px;
   padding: 10px;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -186,10 +194,11 @@ margin: 0 auto;
             }
 
             .scroll-controls {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 40px;
+  
+
+margin-left: 1000px;
+  height: 0px;
+
 }
 
 .scroll-btn {
