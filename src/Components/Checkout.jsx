@@ -6,6 +6,7 @@ import Navbar from './Navbar'
  import { HiCash } from "react-icons/hi";
  import imgg from "../assets/upi.png"
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
  export default function Checkout() {
       const radioRef = useRef(null);
   const [isChecked, setIsChecked] = useState(false);
@@ -33,7 +34,8 @@ const totalAmount = cartItems.reduce((acc, item) => acc + item.price * item.quan
    <div className="profile-details">
    <div className="head">
       <label htmlFor="">CONTACT</label>
- <a href="">Log in</a>
+<Link to="/Login">
+ <a href="">Log in</a> </Link>
     </div>     
 
    <br />        

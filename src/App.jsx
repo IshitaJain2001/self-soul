@@ -38,6 +38,7 @@ import TermsConditions from "./Components/TermsConditions"
 import ReturnPolicy from "./Components/ReturnPolicy"
 import DeliveryInfo from "./Components/DeliveryInfo"
 import WhatDifferent from "./Components/WhatDifferent"
+import Login from "./Components/Login"
 
 
 function App() {
@@ -82,6 +83,7 @@ function App() {
   <Route path="/Returnpolicy" element={<ReturnPolicy/>}/>
   <Route path="/DeliveryInfo" element={<DeliveryInfo/>}/>
   <Route path="/What's-different" element={<WhatDifferent/>}/>
+  <Route path="/Login" element={<Login/>}/>
    </Routes>
 <Cart/>
    <FooterContact/>
