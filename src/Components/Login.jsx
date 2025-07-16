@@ -1,8 +1,13 @@
  import "./Login.css"
- 
+ import Navbar from "./Navbar"
  function Login(){
 
 return(
+<>
+
+<div className="viewall-nav">
+<Navbar/>
+</div>
      <div class="login-container">
     <h1 class="login-title">LOGIN</h1>
     <p class="login-subtext">Enter your log in details</p>
@@ -25,7 +30,7 @@ return(
     </button>
   </div>
 
-
+</>
 )
  }
 
