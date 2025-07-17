@@ -41,6 +41,7 @@ import WhatDifferent from "./Components/WhatDifferent"
 import Login from "./Components/Login"
 import EnterOTP from "./Components/EnterOTP"
 import AccountDetails from "./Components/AccountDetails"
+import Googlesignin from "./Components/Googlesignin"
 
 
 function App() {
@@ -88,6 +89,7 @@ function App() {
   <Route path="/Login" element={<Login/>}/>
   <Route path="/EnterOTP" element={<EnterOTP/>}/>
   <Route path="/AccountDetails" element={<AccountDetails/>}/>
+  <Route path="/SignUp-with-Google" element={<Googlesignin/>}/>
    </Routes>
 <Cart/>
    <FooterContact/>

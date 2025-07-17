@@ -31,11 +31,13 @@ return(
   <span >Or Login Using</span>
   <hr />
 </div>
-
-    <button class="email-button">
+<Link to="/SignUp-with-Google">
+ <button class="email-button">
     <MdOutlineMail className="email-icon"/>
  Gmail
     </button>
+</Link>
+   
           </div>
   </div>
 
