@@ -39,6 +39,8 @@ import ReturnPolicy from "./Components/ReturnPolicy"
 import DeliveryInfo from "./Components/DeliveryInfo"
 import WhatDifferent from "./Components/WhatDifferent"
 import Login from "./Components/Login"
+import EnterOTP from "./Components/EnterOTP"
+import AccountDetails from "./Components/AccountDetails"
 
 
 function App() {
@@ -84,6 +86,8 @@ function App() {
   <Route path="/DeliveryInfo" element={<DeliveryInfo/>}/>
   <Route path="/What's-different" element={<WhatDifferent/>}/>
   <Route path="/Login" element={<Login/>}/>
+  <Route path="/EnterOTP" element={<EnterOTP/>}/>
+  <Route path="/AccountDetails" element={<AccountDetails/>}/>
    </Routes>
 <Cart/>
    <FooterContact/>

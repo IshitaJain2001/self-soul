@@ -1,5 +1,7 @@
- import "./Login.css"
+ import { Link } from "react-router-dom";
+import "./Login.css"
  import Navbar from "./Navbar"
+ import { MdOutlineMail } from "react-icons/md";
  function Login(){
 
 return(
@@ -9,6 +11,9 @@ return(
 <Navbar/>
 </div>
      <div class="login-container">
+      <div className="login-details">
+
+
     <h1 class="login-title">LOGIN</h1>
     <p class="login-subtext">Enter your log in details</p>
 
@@ -17,17 +22,21 @@ return(
       <input type="tel" class="phone-input" placeholder="Mobile Number" />
     </div>
 
-    <button class="otp-button">REQUEST OTP</button>
+  <Link to="/EnterOTP">
+  <button class="otp-button">REQUEST OTP</button> 
+  </Link>  
 
-    <div class="divider">
-      <hr />
-      <span>Or Login Using</span>
-      <hr />
-    </div>
+  <div class="divider">
+  <hr  />
+  <span >Or Login Using</span>
+  <hr />
+</div>
 
     <button class="email-button">
-      📧 Email
+    <MdOutlineMail className="email-icon"/>
+ Gmail
     </button>
+          </div>
   </div>
 
 </>
