@@ -1,22 +1,28 @@
 // routes/products.js
+import express from "express";
 import { Product } from "../Models/Product.js";
 
-export const handleRoutes = async (req, res) => {
-  if (req.method === "GET") {
-    const data = await Product.find();
-    res.writeHead(200, { "Content-Type": "application/json" });
-    res.end(JSON.stringify(data));
-  }
+const router = express.Router();
 
-  if (req.method === "POST") {
-    let body = "";
-    req.on("data", chunk => (body += chunk));
-    req.on("end", async () => {
-      const parsed = JSON.parse(body);
-      const newProduct = new Product(parsed);
-      await newProduct.save();
-      res.writeHead(201, { "Content-Type": "application/json" });
-      res.end(JSON.stringify(newProduct));
-    });
+// GET all products
+router.get("/", async (req, res) => {
+  try {
+    const data = await Product.find();
+    res.status(200).json(data);
+  } catch (err) {
+    res.status(500).json({ error: "Server error" });
   }
-};
+});
+
+// POST a new product
+router.post("/", async (req, res) => {
+  try {
+    const newProduct = new Product(req.body);
+    await newProduct.save();
+    res.status(201).json(newProduct);
+  } catch (err) {
+    res.status(400).json({ error: "Invalid data" });
+  }
+});
+
+export default router;
