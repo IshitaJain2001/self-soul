@@ -3,7 +3,8 @@
     name:String,
     pieces:Number,
     image:String,
-    price:Number
+    price:Number,
+    category:String
   })
 
   export const Product = mongoose.model("Product", productSchema);
