@@ -1,0 +1,65 @@
+
+
+@import "./colors.css";
+
+
+.nature-section {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  font-family: 'Montserrat';
+}
+
+.nature-image {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+.nature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nature-content {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  background-color: var( --pink-text);
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.final-content {
+  margin-top: 20px;
+  height: 210px;
+}
+
+.nature-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--bath-rituals);
+  font-weight: 500;
+}
+
+.nature-content p {
+  font-size: 12px;
+  line-height: 1.6;
+
+  height: 70px;
+  color: var( --green-text);
+}
+
+.nature-content a {
+   color: var( --green-text);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16x;
+
+  font-weight: 500;
+  
+}

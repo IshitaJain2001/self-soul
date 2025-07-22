@@ -1,0 +1,47 @@
+@import "./colors.css";
+
+.beauty-container {
+  background: var(--pink-text);
+height: 376px;
+  color: white;
+  font-family: 'Montserrat';
+  padding:80px 324px ;
+}
+
+.inner-container {
+  max-width: 782px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  height: 210px;
+ 
+}
+
+.beauty-container h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--clean-beauty-title);
+  text-align: center;
+}
+
+.beauty-container p {
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: left;
+  color: var(--clean-beauty-title);
+  word-spacing: 1.2px;
+}
+
+.imgg {
+  width: 782px;
+  height: auto;
+display: flex;
+justify-content: center;
+
+}
+
+.imgg img{
+    width: 150px;
+  height: auto;
+}

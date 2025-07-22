@@ -1,0 +1,47 @@
+ @imports "./colors.css";
+
+ .footerSection-container{
+    height: 324px;
+    width: 100vw;
+    transform: translateY(-3px);
+    background-color: var(--pink-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .footer-wrapper{
+
+    height: 100px;
+    display: flex;
+    width: 1108px;
+    justify-content: space-evenly;
+
+
+   
+ }
+
+ .footer-col{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .footer-col li{
+list-style-type: none;
+opacity: 0.7;
+margin-bottom: 7px;
+ }
+
+ .footer-col h4{
+    margin-bottom: 20px;
+ }
+
+ .footer-col .social-icons{
+    display: flex;
+    font-size: 24px;
+    width: 170px;
+    justify-content: space-between;
+    margin-top: 10px;
+    opacity: 0.8;
+ }

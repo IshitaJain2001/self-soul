@@ -1,0 +1,46 @@
+@imports "./colors.css";
+
+.main-container{
+    height: 1500px;
+    background: var(--pink-bg);
+    color: var(--green-text);
+ }
+
+ .main-container video{
+    height: 380px;
+    margin-bottom: 30px;
+ }
+
+ .main-container h1, .main-container h2 {
+    text-align: center;
+    color: var(--bath-rituals);
+ }
+
+ .main-container p{
+    width: 900px;
+    text-align: center;
+    margin: 30px auto;
+  margin-bottom: 40px;
+ }
+ .grid-images{
+   display: grid;
+   grid-template-columns: repeat(4,1Fr);
+   width: 90%;
+   row-gap: 25px;
+   column-gap: 25px;
+   margin: 30px auto;
+ }
+
+ .grid-images img{
+   width: 280px;
+   height: 364px;
+ }
+
+ .main-container button{
+    display: block;
+ margin: 20px auto;
+ padding:10px 30px;
+ background: transparent;
+ border:1px solid var(--green-text);
+ border-radius: 999px;
+ }

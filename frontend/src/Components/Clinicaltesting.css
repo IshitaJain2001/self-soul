@@ -1,0 +1,65 @@
+ @imports "./colors.css";
+ 
+ .clinical-proofs{
+    height: 995px;
+    background-color: var(--pink-bg);
+display: flex;
+flex-direction: column;
+align-items: center;
+
+font-family: "Montserrat";
+ }
+.clinical-proofs .content{
+width: 842px;
+height: 158px;
+margin-top: 50px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+ .clinical-proofs h3{
+ 
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--bath-rituals);
+ }
+
+ .clinical-proofs p{
+ 
+    font-size: 12px;
+    margin-top: 20px;
+    color: var(--green-text);
+ }
+.diseases{
+    display: flex;
+  gap: 10px;
+  margin-top: 40px;
+}
+ .diseases img{
+    height: 364px;
+    width: 300px;
+    
+ }
+ .diseases-description{
+    display: flex;
+    width: 90vw;
+    justify-content: space-around;
+    margin-top: 30px;
+    
+ }
+ .desc h3{
+    font-size: 20px;
+ }
+
+ .desc p{
+    font-size: 12px;
+    width: 265px;
+    height: auto;
+ }
+
+ .suitability{
+   margin-top: 60px;
+    width: 842px;
+    height: 106px;
+ }

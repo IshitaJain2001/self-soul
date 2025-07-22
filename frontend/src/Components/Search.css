@@ -1,0 +1,83 @@
+ @imports "./color.css";
+ 
+ .search-container{
+    height: 540px;
+   background: var(--pink-bg);
+    padding-top: 30px;
+ }
+
+ .search-container .input{
+    height: 88px;
+    width: 100vw;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+ .input input{
+    height: 46px;
+    width: 640px;
+    border-radius: 999px;
+    background-color: transparent;
+    border: 1px solid var(--green-text);
+    padding-left: 55px;
+ }
+
+ .input .search-icon{
+    height: 24px;
+    width: 24px;
+    position: relative;
+    left: 50px;
+ }
+
+ .input .cross{
+    font-size: 25px;
+    position: relative;
+    left: 20px;
+ }
+
+ .wishlist{
+    height: 422px;
+display: flex;
+align-items: center;
+flex-direction: column;
+gap: 20px;
+padding-top: 100px;
+ }
+
+ .wishlist h1{
+   font-weight: 400; 
+ }
+
+ .input1{
+     height: 88px;
+    width: 100vw;
+    /* background: #FFFFFF; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+  .input1 input{
+    height: 46px;
+    width: 640px;
+    border-radius: 999px;
+    background-color: transparent;
+    border: 1px solid var(--green-text);
+    padding-left: 55px;
+ }
+
+ .input1 .search-icon{
+    height: 24px;
+    width: 24px;
+    position: relative;
+    left: 50px;
+ }
+
+ .input1 .cross{
+    font-size: 25px;
+    position: relative;
+    left: 20px;
+ }

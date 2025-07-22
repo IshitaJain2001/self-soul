@@ -1,0 +1,128 @@
+ @imports "./colors.css";
+ 
+ .checkout-container{
+    height: 1100px;
+    padding: 30px;
+    background: var(--pink-bg);
+    font-family: "Montserrat";
+    /* display: flex; */
+ }
+.checkout-parts {
+   display: flex;
+   margin-top: 45px;
+}
+ .checkout-container h1{
+    text-align: center;
+    color: var(--bath-rituals);
+    font-weight: 500;
+ }
+
+ .profile-details{
+    width: 50%;
+border-right:1px solid var(--bath-rituals) ;
+
+ 
+ }
+
+ .profile-details .head{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    color: var(--bath-rituals);
+ }
+ .profile-details label{
+    font-weight: 500;
+    font-size: 18px;
+ }
+
+ .profile-details a{
+ text-decoration:underline;
+ }
+
+  .profile-details input{
+    padding: 10px;
+    background: transparent;
+    border: 1px solid black;
+    width: 85%;
+    border-radius: 5px;
+  }
+
+  .profile-details .add{
+    display: flex;
+    width: 85%;
+   justify-content: space-between;
+  }
+  .profile-details .add input{
+    width: 32%;
+
+  }
+
+  .address-details{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+.radio-btn {
+  display: flex;
+  align-items: center;
+
+  margin-top: 20px;
+}
+
+.radio-btn input{
+    width: 30px;
+}
+
+.radio-btn span{
+   opacity: 0.7;
+}
+
+.payment-details{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+     gap: 10px;
+ 
+}
+.payment-details input{
+    width: 30px;
+   
+}
+
+.payment-details>div{
+     padding: 10px;
+    background: transparent;
+    border: 1px solid black;
+    width: 85%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.profile-details img{
+    height: 25px;
+    width: 25px;
+}
+
+.proceed-btn{
+   display: block;
+   width: 80%;
+   padding: 10px;
+   color: white;
+   background: var(--bath-rituals);
+   border-radius: 999px;
+ margin-left: 10px;
+ margin-top: 40px;
+}
+
+hr{
+   width: 85%;
+   margin-top: 60px;
+}
+
+.cart-details{
+   width: 50%;
+}
